@@ -8,22 +8,14 @@
     <link rel="shortcut icon" href="/6df2b309.favicon.ico">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <link rel="stylesheet" href="styles/f836b910.main.css">
-    <script src="scripts/vendor/d4d78a91.modernizr.js"></script>
+    <link rel="stylesheet" href="styles/27ff78af.main.css">
+    <script src="scripts/vendor/fbe20327.modernizr.js"></script>
 
   </head>
   <body>
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-
-  
-    <!--#########################
-        #                       #
-        #  ГЛАВНАЯ СТРАНИЦА     #
-        #                       #
-        #########################-->
 
 
 
@@ -41,12 +33,11 @@
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
 				</button>
 				<div class="navbar-brand">
                    <img src="images/logo.png" class="img-responsive">
 				</div>
-			   <div class="callback hidden-xs">
+			   <div class="callback hidden-md hidden-sm hidden-xs">
 			   	 <div>8-983-234-23-32<br>
                  <a href="#" class="btn btn-warning" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a>
                 </div>
@@ -76,37 +67,35 @@
   </div>
 </div>
 
+		   </div><!--/login-->
 
+          <!-- ######## END LOGIN ############-->
 
+            <!-- search -->
+            <form id="search" name="search"  role="search" >
+                <div class="input-group">
+                    <input type="search" class="form-control" name="search" placeholder="Поиск часов" style="min-width: 100px;" required />
+                    <div class="input-group-btn">
+                        <button type="submit" class="btn btn-default" title="Поиск"><span class="glyphicon glyphicon-search"></span></button>
+                    </div>
+                </div>
+            </form>
 
+            <div class="cart">
+            	<div class="cart-icon"></div>
+            	<div class="cart-heading">
+            		Корзина
+            	</div>
+            	<div class="cart-link">
+            		<p>Товаров: 2 шт</p>
+            		<a href="">На сумму: 2000р</a>
+            	</div>
+            </div>
 
-
-<!-- Modal -->
-<div class="modal fade" id="callbackModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel"></h4>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-
-		   </div>
-
-          <!-- ######## END MODULE MODAL LOGIN ############-->
 
 
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-
 					<li class="active"><a href="#">Главная</a></li>
 					<li><a href="catalog.html">Каталог</a></li>
 					<li><a href="page.html">Оптовая продажа</a></li>
@@ -164,10 +153,13 @@
            <div class="module-heading">
     		  <h2>Новые поступления</h2>
           	</div>
+          	  
           	  <!--product-->
     	   		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
     	   			<div class="product">
-    	   			  <img src="images/et.png">
+    	   			<a href="">
+    	   			  <img src="images/et.png" class="img-responsive">
+    	   			</a>
     	   			  <div class="product-title">
     	   			    <h3>LOREM IPSUM</h3>
     	   			    <a href="#" class="btn btn-primary">Купить</a>
@@ -175,96 +167,12 @@
     	   			</div>
     	   		</div>
           	   <!--end product-->
-          	   <!--product-->
-    	   		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-    	   			<div class="product">
-    	   			  <img src="images/et.png">
-    	   			  <div class="product-title">
-    	   			    <h3>LOREM IPSUM</h3>
-    	   			    <a href="#" class="btn btn-primary">Купить</a>
-    	   			  </div>
-    	   			</div>
-    	   		</div>
-          	   <!--end product-->
-          	   <!--product-->
-    	   		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-    	   			<div class="product">
-    	   			  <img src="images/et.png">
-    	   			  <div class="product-title">
-    	   			    <h3>LOREM IPSUM</h3>
-    	   			    <a href="#" class="btn btn-primary">Купить</a>
-    	   			  </div>
-    	   			</div>
-    	   		</div>
-          	   <!--end product-->
-          	   <!--product-->
-    	   		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-    	   			<div class="product">
-    	   			  <img src="images/et.png">
-    	   			  <div class="product-title">
-    	   			    <h3>LOREM IPSUM</h3>
-    	   			    <a href="#" class="btn btn-primary">Купить</a>
-    	   			  </div>
-    	   			</div>
-    	   		</div>
-          	   <!--end product-->
+
           	</div><!--row-->
           
       <!-- ########## END LATEST ##########-->
 
-          
-      <!-- ######## MODULE FEATURES ############-->
 
-          <div class="row">
-           <div class="module-heading">
-    		  <h2>Рекомендуем</h2>
-          	</div>
-          	  <!--product-->
-    	   		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-    	   			<div class="product">
-    	   			  <img src="images/et.png">
-    	   			  <div class="product-title">
-    	   			    <h3>LOREM IPSUM</h3>
-    	   			    <a href="#" class="btn btn-primary">Купить</a>
-    	   			  </div>
-    	   			</div>
-    	   		</div>
-          	   <!--end product-->
-          	   <!--product-->
-    	   		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-    	   			<div class="product">
-    	   			  <img src="images/et.png">
-    	   			  <div class="product-title">
-    	   			    <h3>LOREM IPSUM</h3>
-    	   			    <a href="#" class="btn btn-primary">Купить</a>
-    	   			  </div>
-    	   			</div>
-    	   		</div>
-          	   <!--end product-->
-          	   <!--product-->
-    	   		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-    	   			<div class="product">
-    	   			  <img src="images/et.png">
-    	   			  <div class="product-title">
-    	   			    <h3>LOREM IPSUM</h3>
-    	   			    <a href="#" class="btn btn-primary">Купить</a>
-    	   			  </div>
-    	   			</div>
-    	   		</div>
-          	   <!--end product-->
-          	   <!--product-->
-    	   		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-    	   			<div class="product">
-    	   			  <img src="images/et.png">
-    	   			  <div class="product-title">
-    	   			    <h3>LOREM IPSUM</h3>
-    	   			    <a href="#" class="btn btn-primary">Купить</a>
-    	   			  </div>
-    	   			</div>
-    	   		</div>
-          	   <!--end product-->
-          	</div><!--row-->
-      <!-- ########## END FEATURES ##########-->
    
     </div><!-- end container -->
   </section>
